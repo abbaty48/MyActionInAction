@@ -9,7 +9,7 @@ outputs: # id of output
   answer:
     description: "The answer to everything is (always 42)"
 runs:
-  usage: 'docker'
+  using: 'docker'
   image: 'DockerFile'
   args:
     - ${{ inputs.who-to-greet }}
