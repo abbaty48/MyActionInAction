@@ -1,5 +1,5 @@
 name: "{Abbaty48}'s Action in Action"
-description: "Greeting someone and retuns always 42"
+description: "Greeting someone and returns always 42"
 inputs:
   who-to-greet: # id of input
     description: 'Who to Greet'
@@ -9,7 +9,7 @@ outputs: # id of output
   answer:
     description: "The answer to everything is always 42"
 runs:
--  usage: 'docker'
-   image: 'DockerFile'
-   args:
-     ${{ inputs.who-to-greet }}
+  - usage: 'docker'
+    image: 'DockerFile'
+    args:
+      ${{ inputs.who-to-greet }}
