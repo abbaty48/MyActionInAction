@@ -7,9 +7,9 @@ inputs:
     default: 'World'
 outputs: # id of output
   answer:
-    description: "The answer to everything is always 42"
+    description: "The answer to everything is (always 42)"
 runs:
-  - usage: 'docker'
-    image: 'DockerFile'
-    args:
-      ${{ inputs.who-to-greet }}
+  usage: 'docker'
+  image: 'DockerFile'
+  args:
+    - ${{ inputs.who-to-greet }}
